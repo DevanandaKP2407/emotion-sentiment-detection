@@ -1,0 +1,48 @@
+MODEL EVALUATION RESULTS
+========================
+
+Dataset: dair-ai/emotion
+Training examples: 16000
+Testing examples: 2000
+
+EMOTION MODEL
+Accuracy: 0.8775
+
+              precision    recall  f1-score   support
+
+     sadness       0.94      0.88      0.91       581
+         joy       0.91      0.89      0.90       695
+        love       0.71      0.87      0.78       159
+       anger       0.86      0.89      0.88       275
+        fear       0.89      0.83      0.86       224
+    surprise       0.65      0.82      0.72        66
+
+    accuracy                           0.88      2000
+   macro avg       0.83      0.87      0.84      2000
+weighted avg       0.88      0.88      0.88      2000
+
+Confusion Matrix:
+[[513  25   6  25   9   3]
+ [  8 616  50   7   3  11]
+ [  0  17 139   2   0   1]
+ [ 12   7   1 246   9   0]
+ [ 12   4   1   6 187  14]
+ [  2   6   0   1   3  54]]
+
+SENTIMENT MODEL
+Accuracy: 0.9390
+
+              precision    recall  f1-score   support
+
+    negative       0.97      0.93      0.95      1080
+     neutral       0.61      0.83      0.71        66
+    positive       0.94      0.95      0.95       854
+
+    accuracy                           0.94      2000
+   macro avg       0.84      0.91      0.87      2000
+weighted avg       0.94      0.94      0.94      2000
+
+Confusion Matrix:
+[[1009   24   47]
+ [   7   55    4]
+ [  29   11  814]]
